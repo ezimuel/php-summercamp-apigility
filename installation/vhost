@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    ServerName apigility.phpsc
+    DocumentRoot /var/www/summercamp/workshops/apigility/public
+    DirectoryIndex index.php
+
+    <Directory /var/www/summercamp/workshops/apigility/public>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+</VirtualHost>

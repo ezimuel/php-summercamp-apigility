@@ -1,0 +1,30 @@
+{
+    "name": "ezimuel/php-summercamp-apigility",
+    "description": "Apigility workshop for PHP SummerCamp 2015",
+    "type": "application",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "api",
+        "apigility",
+        "framework",
+        "zf2"
+    ],
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "~2.4",
+        "zfcampus/zf-apigility": "dev-master",
+        "zfcampus/zf-apigility-documentation": "dev-master",
+        "zfcampus/zf-development-mode": "dev-master"
+    },
+    "require-dev": {
+        "zendframework/zftool": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master",
+        "zfcampus/zf-apigility-admin": "dev-master",
+        "zfcampus/zf-deploy": "dev-master"
+    },
+    "suggest": {
+        "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ~1.0 to create Doctrine-Connected REST services",
+        "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ~1.0 to add HTTP caching to your API",
+        "zfr/zfr-cors": "zfr/zfr-cors ~1.2 to add CORS support to your API"
+    }
+}
