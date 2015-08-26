@@ -5,7 +5,7 @@
 
     <Directory /var/www/summercamp/workshops/apigility/public>
         Options FollowSymLinks
-        AllowOverride None
+        AllowOverride All
         Require all granted
     </Directory>
 </VirtualHost>
