@@ -172,4 +172,65 @@ return array(
             ),
         ),
     ),
+    'zf-content-validation' => array(
+        'Conference\\V1\\Rest\\Speaker\\Controller' => array(
+            'input_filter' => 'Conference\\V1\\Rest\\Speaker\\Validator',
+        ),
+        'Conference\\V1\\Rest\\Talk\\Controller' => array(
+            'input_filter' => 'Conference\\V1\\Rest\\Talk\\Validator',
+        ),
+    ),
+    'input_filter_specs' => array(
+        'Conference\\V1\\Rest\\Speaker\\Validator' => array(
+            0 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'name',
+                'description' => 'The name of the speaker',
+                'error_message' => 'You miss the name of the speaker',
+            ),
+            1 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'title',
+                'description' => 'The job title of the speaker',
+                'error_message' => 'You miss the job title of the speaker',
+            ),
+            2 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'company',
+                'description' => 'The company of the speaker',
+                'error_message' => 'You miss the company of the speaker',
+            ),
+        ),
+        'Conference\\V1\\Rest\\Talk\\Validator' => array(
+            0 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'title',
+                'description' => 'The title of the talk',
+                'error_message' => 'You miss the title of the talk',
+            ),
+            1 => array(
+                'required' => true,
+                'validators' => array(
+                    0 => array(
+                        'name' => 'Zend\\Validator\\Date',
+                        'options' => array(
+                            'format' => 'Y-m-d',
+                            'message' => 'The day must be in the format YYYY-MM-DD',
+                        ),
+                    ),
+                ),
+                'filters' => array(),
+                'name' => 'day',
+                'description' => 'The day of the talk in the format YYYY-MM-DD',
+            ),
+        ),
+    ),
 );
