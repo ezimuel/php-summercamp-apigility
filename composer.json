@@ -11,10 +11,10 @@
     ],
     "require": {
         "php": ">=5.5",
-        "zendframework/zendframework": "2.4.7",
-        "zfcampus/zf-apigility": "~1.1",
+        "zendframework/zendframework": "~2.4",
+        "zfcampus/zf-apigility": "dev-master",
         "zfcampus/zf-apigility-documentation": "^1.0.5",
-        "zfcampus/zf-development-mode": "~2.0"
+        "zfcampus/zf-development-mode": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
