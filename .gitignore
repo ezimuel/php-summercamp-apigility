@@ -5,4 +5,3 @@ config/autoload/local.php
 config/autoload/*.local.php
 data/cache/*
 !data/cache/.gitkeep
-composer.lock
