@@ -9,6 +9,7 @@ class SpeakerEntity
     public $company;
     public $url_company;
     public $twitter;
+    public $talks;
 
     public function getArrayCopy()
     {
@@ -18,7 +19,8 @@ class SpeakerEntity
         'title'       => $this->title,
         'company'     => $this->company,
         'url_company' => $this->url_company,
-        'twitter'     => $this->twitter
+        'twitter'     => $this->twitter,
+        'talks'       => $this->talks,
       );
     }
 
@@ -30,5 +32,6 @@ class SpeakerEntity
       $this->company     = $array['company'];
       $this->url_company = $array['url_company'];
       $this->twitter     = $array['twitter'];
+      $this->talks       = $array['talks'];
     }
 }
