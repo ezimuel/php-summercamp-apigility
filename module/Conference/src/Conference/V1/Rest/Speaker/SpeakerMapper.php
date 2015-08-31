@@ -48,9 +48,9 @@ class SpeakerMapper
             new TalkEntity()
         );
         $paginatorAdapter = new DbSelect($select, $this->table->adapter, $resultSet);
-        $speakers->talks = new TalkCollection($paginatorAdapter);
+        $speaker->talks = new TalkCollection($paginatorAdapter);
 
-        return $speakers;
+        return $speaker;
     }
 
     public function addSpeaker($speaker)
