@@ -28,6 +28,7 @@ You can finally execute the Apigility UI running this command:
 php -S 0.0.0.0:8888 -t public public/index.php
 ```
 
-Open your browser at http://localhost:8888 and start to use Apigility.
+Open your browser at [http://localhost:8888](http://localhost:8888) and start to
+use Apigility!
 
 The first exercise of the workshop is reported [here](http://www.zimuel.it/slides/phpsummer2015/#/26).
